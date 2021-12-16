@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -12,17 +12,18 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=aplrecruitment;AccountKey=nbRLc5jEPsrnP7Nuz7yjimq3i+AaDBq6xeuaJPIOxPEotzqmgJ3oqCrABS8JrKKMJq142zhxTVDIYEw6IsIvkw==;EndpointSuffix=core.windows.net",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "ImageUploader": {
       "commandName": "Project",
-      "dotnetRunMessages": "true",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5000"
     }
   }
 }

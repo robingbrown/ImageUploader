@@ -33,6 +33,8 @@ namespace ImageUploader.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Check image size
+
                 // Save image to folder
                 string wwwRootPath = _hostEnvironment.WebRootPath;
                 string fileName = Path.GetFileNameWithoutExtension(imageModel.ImageFile.FileName);
@@ -48,7 +50,7 @@ namespace ImageUploader.Controllers
                 _repository.SaveImage(imageModel);
                 return RedirectToAction(nameof(Index));
             }
-            return View(imageModel);
+            return View("Index");
         }
     }
 }
